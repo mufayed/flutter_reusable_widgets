@@ -23,7 +23,7 @@ class _ListNotificationsState extends State<ListNotifications> {
             alignment: Alignment.centerRight,
             child: SizedBox(
               height: 0.5,
-              width: MediaQuery.of(context).size.width / 1.5,
+              width: MediaQuery.of(context).size.width,
               child: const Divider(),
             ),
           );
