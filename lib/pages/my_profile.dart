@@ -46,7 +46,7 @@ class _MyProfileState extends State<MyProfile> {
               ),
               const SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
+                padding: const EdgeInsets.all(50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -102,7 +102,6 @@ class _MyProfileState extends State<MyProfile> {
                 ),
               ),
               const SizedBox(height: 20),
-
               const ProfileImagesList()
             ],
           ),

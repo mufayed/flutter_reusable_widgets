@@ -21,7 +21,7 @@ class _PostItemState extends State<PostItem> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
+      padding: const EdgeInsets.all(5),
       child: Column(
         children: <Widget>[
           ListTile(

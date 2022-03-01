@@ -45,22 +45,22 @@ class _MainScreenState extends State<MainScreen> {
                 icon: Icon(
                   Icons.home,
                 ),
-                label: ""),
+                label: "Home"),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.people,
                 ),
-                label: ""),
+                label: "Explore"),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_alert,
                 ),
-                label: ""),
+                label: "Notifications"),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
                 ),
-                label: ""),
+                label: "Profile"),
           ],
           onTap: navigationTapped,
           currentIndex: _page,

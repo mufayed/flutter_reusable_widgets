@@ -18,7 +18,7 @@ class _ListPostsState extends State<ListPosts> {
     return Padding(
       padding: const EdgeInsets.only(top: 30),
       child: ListView.builder(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.all(20),
         itemCount: widget.posts.length,
         itemBuilder: (BuildContext context, int index) {
           Map post = widget.posts[index];

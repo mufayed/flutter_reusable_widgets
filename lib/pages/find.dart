@@ -20,8 +20,7 @@ class _FindState extends State<Find> {
               "name": "Lorem ipsum",
               "dp": "assets/img${random.nextInt(4)}.jpg",
               "status": "This is a dummy status",
-              "Followed": random.nextBool(),
-            });
+        });
 
     return Scaffold(body: ListUsers(users: users));
   }

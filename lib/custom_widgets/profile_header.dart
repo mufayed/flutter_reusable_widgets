@@ -24,7 +24,7 @@ class _ProfileImagesListState extends State<ProfileImagesList> {
       ),
       itemBuilder: (BuildContext context, int index) {
         return Padding(
-          padding: const EdgeInsets.all(5.0),
+          padding: const EdgeInsets.all(5),
           child: Image.asset(
             "assets/land${random.nextInt(5)}.jpg",
             fit: BoxFit.cover,
