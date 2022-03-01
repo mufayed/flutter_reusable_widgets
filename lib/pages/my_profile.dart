@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
-
 import '../custom_widgets/lists/profile_images_list.dart';
+import '../custom_widgets/views/profile_numbers_view.dart';
+import '../utill/const.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);
@@ -11,8 +11,6 @@ class MyProfile extends StatefulWidget {
 }
 
 class _MyProfileState extends State<MyProfile> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,76 +30,40 @@ class _MyProfileState extends State<MyProfile> {
                 radius: 50,
               ),
               const SizedBox(height: 10),
-              const Text(
-                'Lorem Ipsum',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 22,
-                ),
-              ),
+              Text('Lorem Ipsum', style: Const.titleTextStyle),
               const SizedBox(height: 3),
               const Text(
                 "Bio",
-                style: TextStyle(),
               ),
-              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Column(
-                      children: const <Widget>[
-                        Text(
-                          "20",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                          ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          "Posts",
-                          style: TextStyle(),
-                        ),
-                      ],
+                    ProfileNumbersView(
+                      title: 'Posts',
+                      number: '521',
+                      onPressed: () {
+                        // do whatever you want
+                      },
                     ),
-                    Column(
-                      children: const <Widget>[
-                        Text(
-                          "248",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                          ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          "Followers",
-                          style: TextStyle(),
-                        ),
-                      ],
+                    ProfileNumbersView(
+                      title: 'Followers',
+                      number: '200',
+                      onPressed: () {
+                        // do whatever you want
+                      },
                     ),
-                    Column(
-                      children: const <Widget>[
-                        Text(
-                          "508",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 22,
-                          ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          "Following",
-                          style: TextStyle(),
-                        ),
-                      ],
+                    ProfileNumbersView(
+                      title: 'Following',
+                      number: '521',
+                      onPressed: () {
+                        // do whatever you want
+                      },
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
               const ProfileImagesList()
             ],
           ),

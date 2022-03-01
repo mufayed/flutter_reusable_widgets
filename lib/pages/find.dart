@@ -21,7 +21,6 @@ class _FindState extends State<Find> {
               "dp": "assets/img${random.nextInt(4)}.jpg",
               "status": "This is a dummy status",
         });
-
     return Scaffold(body: ListUsers(users: users));
   }
 }

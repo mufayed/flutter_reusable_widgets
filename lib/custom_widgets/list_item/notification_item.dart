@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_reusable_widgets/utill/const.dart';
 
 class NotificationItem extends StatefulWidget {
   final Map notif;
@@ -25,12 +26,10 @@ class _NotificationItemState extends State<NotificationItem> {
         title: Text(widget.notif['body']),
         trailing: Text(
           widget.notif['time'],
-          style: const TextStyle(
-            fontWeight: FontWeight.w300,
-            fontSize: 11,
-          ),
+          style: Const.midTextStyle
         ),
-        onTap: () {},
+        onTap: () {
+        },
       ),
     );
   }

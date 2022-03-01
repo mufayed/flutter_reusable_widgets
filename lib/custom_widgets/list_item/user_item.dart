@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_reusable_widgets/utill/const.dart';
 
 class UserItem extends StatefulWidget {
   final Map user;
@@ -26,12 +26,7 @@ class _UserItemState extends State<UserItem> {
           title: Text(widget.user['name']),
           subtitle: Text(widget.user['status']),
           trailing: TextButton(
-            child: const Text(
-              "Follow",
-              style: TextStyle(
-                color: Colors.white,
-              ),
-            ),
+            child: Text("Follow", style: Const.followBtnStyle),
             onPressed: () {},
           ),
         ),

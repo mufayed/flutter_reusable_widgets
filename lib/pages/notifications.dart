@@ -12,7 +12,6 @@ class Notifications extends StatefulWidget {
 
 class _NotificationsState extends State<Notifications> {
   Random random = Random();
-
   @override
   Widget build(BuildContext context) {
     // Generate notifications
